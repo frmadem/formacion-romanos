@@ -37,7 +37,10 @@ describe("El conversor...", function(){
 
         expect(conversor(200)).to.equal("CC");
 
+        expect(conversor(500)).to.equal("D")
+
         expect(conversor(989)).to.equal("CMLXXXIX")
+
     })
 
 })
