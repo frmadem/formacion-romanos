@@ -43,4 +43,15 @@ describe("El conversor...", function(){
 
     })
 
+    it("convierte correctamente números romanos de millares", function(){
+
+        expect(conversor(1000)).to.equal("M");
+        expect(conversor(1500)).to.equal("MD");
+    
+        expect(conversor(2944)).to.equal("MMCMXLIV")
+
+        expect(conversor(3999)).to.equal("MMMCMXCIX")
+    
+    })
+
 })
